@@ -40,6 +40,10 @@ namespace basecross{
 		void SetScale(Vec3 scale) {
 			m_Transform->SetScale(scale);
 		}
+
+		shared_ptr<Transform> GetTransform()const {
+			return m_Transform;
+		}
 		
 	};
 }

@@ -5,7 +5,7 @@
 
 #pragma once
 
-
+#include "Object.h"
 #include "ProjectShader.h"
 #include "ProjectBehavior.h"
 #include "Scene.h"
@@ -16,7 +16,6 @@
 #include "Json.h"
 #include "Sprite.h"
 #include "Managers.h"
-#include "Object.h"
 #include "SelectStage.h"
 #include "TitleStage.h"
 #include "ResourceManager.h"
