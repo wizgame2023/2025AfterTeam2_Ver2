@@ -21,4 +21,4 @@
 #include "TitleStage.h"
 #include "ResourceManager.h"
 #include "InputManager.h"
-
+#include "ElectricComponent.h"
