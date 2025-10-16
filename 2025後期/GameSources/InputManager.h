@@ -44,6 +44,8 @@ namespace basecross
 
 		Vec2 m_LStick;
 		Vec2 m_RStick;
+		float m_RTrigger;
+		float m_LTrigger;
 		map<wstring, bool> m_Buttons;
 		map<wstring, bool> m_DownButtons;
 		map<wstring, bool> m_UpButtons;
@@ -105,6 +107,23 @@ namespace basecross
 			return m_RStick;
 		}
 
+		/*!
+		@brief Lトリガーの入力を取得
+		@return Lトリガーの入力
+		*/
+		float GetLTrigger()
+		{
+			return m_LTrigger;
+		}
+
+		/*!
+		@brief Rトリガーの入力を取得
+		@return Rトリガーの入力
+		*/
+		float GetRTrigger()
+		{
+			return m_RTrigger;
+		}
 		/*!
 		@brief ボタンの状態を取得
 		@param[in] button 取得したいボタンの名前

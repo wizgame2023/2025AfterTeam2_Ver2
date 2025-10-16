@@ -560,6 +560,23 @@ namespace basecross {
 
 	}
 
+	void Board::VectorTowardAxisZ(Vec3& vec) {
+		float rad = atan2f(-vec.x, vec.y);
+		Vec3 forward = m_Trans->GetForward();
+		Vec3 crs;
+		if (forward == Vec3(0, 1, 0)) {
+			crs = cross(Vec3(-1, 0, 0), forward);
+		}
+		else {
+			crs = cross(Vec3(0, -1, 0), forward);
+		}
+		auto rot = XMMatrixRotationAxis(crs, rad);
+		auto world = m_Trans->GetWorldMatrix();
+		world.rotation((Quat)XMQuaternionRotationMatrix(rot));
+
+		m_Trans->SetQuaternion(m_Trans->GetQuaternion() * world.quatInMatrix());
+	}
+
 
 	SlideInSprite::SlideInSprite(
 		const shared_ptr<Stage>& StagePtr, 

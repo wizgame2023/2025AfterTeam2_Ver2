@@ -1342,6 +1342,7 @@ namespace basecross{
 			m_Trans->SetQuaternion(Qt);
 
 		}
+		void VectorTowardAxisZ(Vec3& vec);
 
 		void SetOffset(Vec3 offset) {
 			m_Offset = offset;

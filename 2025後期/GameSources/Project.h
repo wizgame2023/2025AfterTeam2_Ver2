@@ -1,11 +1,11 @@
 /*!
 @file Project.h
-@brief コンテンツ用のヘッダをまとめる
+@brief 繧ｳ繝ｳ繝�繝ｳ繝�逕ｨ縺ｮ繝倥ャ繝繧偵∪縺ｨ繧√ｋ
 */
 
 #pragma once
 
-
+#include "Object.h"
 #include "ProjectShader.h"
 #include "ProjectBehavior.h"
 #include "Scene.h"
@@ -16,9 +16,10 @@
 #include "Json.h"
 #include "Sprite.h"
 #include "Managers.h"
-#include "Object.h"
 #include "SelectStage.h"
 #include "TitleStage.h"
 #include "ResourceManager.h"
 #include "InputManager.h"
 #include "ElectricComponent.h"
+#include "ThrowOrbit.h"
+#include "ElectricLine.h"
