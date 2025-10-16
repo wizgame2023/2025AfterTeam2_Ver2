@@ -5,7 +5,7 @@
 
 #pragma once
 #include "stdafx.h"
-
+#include "GameStage.h"
 namespace basecross{
 	class Object : public GameObject {
 	protected:

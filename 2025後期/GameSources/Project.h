@@ -20,4 +20,5 @@
 #include "TitleStage.h"
 #include "ResourceManager.h"
 #include "InputManager.h"
-
+#include "ThrowOrbit.h"
+#include "ElectricLine.h"
