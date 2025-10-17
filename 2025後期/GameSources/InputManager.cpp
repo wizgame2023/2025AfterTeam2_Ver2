@@ -202,6 +202,9 @@ namespace basecross
 		m_LStick = Vec2(pad.fThumbLX, pad.fThumbLY);
 		m_RStick = Vec2(pad.fThumbRX, pad.fThumbRY);
 
+		m_LTrigger = pad.bLeftTrigger;
+		m_RTrigger = pad.bRightTrigger;
+
 		// Button
 		{
 			m_Buttons[L"DUp"] = pad.wButtons & XINPUT_GAMEPAD_DPAD_UP;

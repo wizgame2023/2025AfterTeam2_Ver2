@@ -34,6 +34,17 @@ namespace basecross {
 			CreateViewLight();
 
 			AddGameObject<Player>();
+
+			auto object = AddGameObject<GameObject>();
+			auto draw = object->AddComponent<PNTStaticDraw>();
+			draw->SetMeshResource(L"DEFAULT_CUBE");
+			draw->SetDiffuse(Col4(1, 0, 0, 1));
+			auto col = object->AddComponent<CollisionObb>();
+			col->SetFixed(true);
+			auto trans = object->GetComponent<Transform>();
+			trans->SetPosition(Vec3(0, -3, 0));
+			trans->SetScale(Vec3(10, 1, 10));
+			object->AddComponent<Electric>(100.0f);
 		}
 		catch (...) {
 			throw;

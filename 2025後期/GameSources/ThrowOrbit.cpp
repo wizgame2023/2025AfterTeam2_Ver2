@@ -55,7 +55,7 @@ namespace basecross{
 			auto board = m_Stage->AddGameObject<Board>(L"", Vec3(), Vec3(m_OrbitWidth, 0.1f, 1.0f), true);
 			m_Orbits.push_back(board);
 		}
-		for (int i = currentCount; i > orbitCount; i--) {
+		for (int i = currentCount - 1; i > orbitCount - 1; i--) {
 			m_Stage->RemoveGameObject<Board>(m_Orbits[i]);
 			m_Orbits.erase(m_Orbits.begin() + i);
 		}
